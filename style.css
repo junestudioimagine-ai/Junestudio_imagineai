@@ -108,13 +108,14 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px; /* Reduced gap slightly for more links */
 }
 
 .nav-menu li a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
+    font-size: 0.95rem; /* Slightly smaller for more links */
     transition: color 0.3s ease;
 }
 
@@ -123,15 +124,15 @@ body {
 }
 
 
-/* === HERO SECTION === */
+/* === HERO SECTION (HEADER SPACING FIX) === */
 .hero {
     background: var(--light-color);
-    min-height: 80vh;
+    min-height: 70vh; /* Reduced from 80vh */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 80px 0; /* Reduced from 100px */
 }
 
 .hero h1 {
@@ -150,7 +151,7 @@ body {
     color: var(--text-color);
 }
 
-/* === SERVICES SECTION === */
+/* === SERVICES / SOLUTIONS / WHY-US SECTION === */
 .services {
     padding: 100px 0;
     background: var(--white-color);
@@ -223,9 +224,36 @@ body {
     margin-bottom: 10px;
 }
 
+/* === VIDEO INSIGHTS (NEW SECTION) === */
+.video-insight {
+    padding: 100px 0;
+    background: var(--white-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* === FOUNDER'S VISION SECTION === */
 .founder-vision {
-    background: var(--white-color);
+    background: var(--light-color);
     padding: 100px 0;
     border-top: 1px solid var(--border-color);
 }
@@ -280,7 +308,8 @@ body {
 /* === TESTIMONIALS SECTION === */
 .testimonials {
     padding: 100px 0;
-    background: var(--light-color);
+    background: var(--white-color);
+    border-top: 1px solid var(--border-color);
 }
 
 .testimonial-grid {
@@ -309,6 +338,60 @@ body {
     font-weight: 600;
     color: var(--dark-color);
 }
+
+/* === FAQs (NEW SECTION) === */
+.faq {
+    padding: 100px 0;
+    background: var(--white-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border-color);
+}
+.faq-item:first-of-type {
+    border-top: 1px solid var(--border-color);
+}
+
+.faq-item summary {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    padding: 20px 0;
+    cursor: pointer;
+    list-style: none; /* Hide default arrow */
+    position: relative;
+    padding-right: 30px;
+}
+
+/* Custom Accordion Arrow */
+.faq-item summary::after {
+    content: '\f078'; /* Font Awesome down arrow */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-content {
+    padding-bottom: 20px;
+}
+.faq-content p {
+    line-height: 1.8;
+}
+
 
 /* === FINAL CTA SECTION === */
 .final-cta {
@@ -341,7 +424,8 @@ body {
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 992px) {
     .services-grid,
-    .testimonial-grid {
+    .testimonial-grid,
+    .services-grid[style*="repeat(2, 1fr)"] {
         grid-template-columns: 1fr 1fr;
     }
     
@@ -369,7 +453,8 @@ body {
     }
 
     .services-grid,
-    .testimonial-grid {
+    .testimonial-grid,
+    .services-grid[style*="repeat(2, 1fr)"] {
         grid-template-columns: 1fr;
     }
     
