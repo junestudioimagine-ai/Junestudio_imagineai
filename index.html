@@ -1,115 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junestudios - Brand & Automation Experts</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=aspect-ratio"></script>
-    <style>
-        /* Optional: Define a custom color palette if you want */
-        body {
-            background-color: #111827; /* Dark background */
-        }
-    </style>
+    <title>Junestudios - We Build Your Business's Digital Engine</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="text-gray-200">
+<body>
 
-    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-white">Junestudios</h1>
-            <div class="space-x-6 hidden md:block">
-                <a href="#services" class="hover:text-blue-400">Services</a>
-                <a href="#testimonials" class="hover:text-blue-400">Testimonials</a>
-                <a href="#portfolio" class="hover:text-blue-400">Our Work</a>
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Book a Call</a>
-            </div>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Junestudios</a>
+            <ul class="nav-menu">
+                <li><a href="#solutions">Our Solutions</a></li>
+                <li><a href="#process">Our Process</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <a href="https://calendly.com/junestudio/15-min-content-audit-" class="btn btn-primary" target="_blank">Book a Free Audit</a>
         </nav>
     </header>
 
     <main>
-        <section class="min-h-screen flex items-center bg-gray-900" style="background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 1));">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-                    Transform Your Vision into a Digital Legacy
-                </h2>
-                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-                    From iconic branding that speaks volumes to high-end automation that frees your time. We build businesses that run themselves.
+        <section class="hero">
+            <div class="container">
+                <h1>Your Business Runs on Real-World Service. Your Software Should Too.</h1>
+                <p class="hero-subhead">
+                    For Logistics and Service-Based businesses. We build the automated systems that
+                    <br>cut through the 'digital facade' and deliver real, measurable results.
                 </p>
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-4 px-10 text-lg rounded-lg transition duration-300">
-                    Start Your Project
-                </a>
+                <a href="https://calendly.com/junestudio/15-min-content-audit-" class="btn btn-primary btn-large" target="_blank">Book Your Free Automation Audit</a>
             </div>
         </section>
 
-        <section id="services" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-white text-center mb-16">What We Do</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-gray-900 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-                        <h3 class="text-2xl font-semibold text-white mb-4">Branding & Logo Design</h3>
-                        <p class="text-gray-300">Create an unforgettable identity. We craft logos, brand guides, and messaging that resonate deeply with your audience.</p>
+        <section class="services" id="solutions">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Core Solutions</h2>
+                    <p>We build the powerful, custom engines your business deserves.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <h3>Automated Service & Booking Systems</h3>
+                        <p>Perfect for service-based businesses (like auto-shops). We build smart systems that let clients book appointments, get automated reminders, and track service status—all without a single phone call.</p>
                     </div>
-                    <div class="bg-gray-900 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-                        <h3 class="text-2xl font-semibold text-white mb-4">Web & App Development</h3>
-                        <p class="text-gray-300">Build high-performance, visually stunning websites and applications that convert visitors into loyal customers.</p>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h3>Client & Logistics Portals</h3>
+                        <p>For logistics powerhouses. We create secure, custom portals where your clients can track shipments, manage invoices, and get real-time updates, building transparency and unbreakable trust.</p>
                     </div>
-                    <div class="bg-gray-900 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-                        <h3 class="text-2xl font-semibold text-white mb-4">High-End Business Automation</h3>
-                        <p class="text-gray-300">Reclaim your time. We design and implement custom workflows that automate sales, onboarding, and operations.</p>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-robot"></i>
+                        <h3>End-to-End Workflow Integration</h3>
+                        <p>This is the "engine" that connects everything. We eliminate the 'digital facade' by integrating your new portal, booking system, and internal CRM, so your business runs on autopilot.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="testimonials" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold text-white mb-16">What Our Clients Say</h2>
-                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    
-                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-left">
-                        <p class="text-lg text-gray-300 italic mb-6">"Working with Junestudios was a game-changer. Their automation systems saved us 20+ hours a week. Pure magic."</p>
-                        <p class="text-white font-semibold text-lg">- Mr Samson, CEO of MAXLOG</p>
-                    </div>
-                    
-                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-left">
-                        <p class="text-lg text-gray-300 italic mb-6">"Junestudios helped me build a system that helps me connect with my clients and onboard them, so far I’ve made $12,000 in revenue."</p>
-                        <p class="text-white font-semibold text-lg">- Germany_to_nigeria</p>
-                    </div>
+        <section class="process" id="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our 3-Step Path to Clarity</h2>
+                    <p>We make it simple to get started.</p>
+                </div>
 
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-icon">1</div>
+                        <h3>Discovery & Strategy</h3>
+                        <p>We dive deep into your unique workflow—logistics, service, or otherwise—to understand your "why." We map a clear plan first.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">2</div>
+                        <h3>Build & Integrate</h3>
+                        <p>Our team engineers your custom portals, booking systems, and automations. We do the heavy lifting to build your digital engine.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">3</div>
+                        <h3>Launch & Empower</h3>
+                        <p>We launch your new ecosystem and provide the training you need. You're not just left with a tool; you're empowered to use it.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold text-white mb-16">See Our Work in Action</h2>
-                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-2xl max-w-4xl mx-auto bg-black">
-                    <iframe 
-                        class="w-full h-full" 
-                        src="https://www.youtube.com/embed/YHCvequl3X8" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
+        <section class="founder-vision" id="about">
+            <div class="container">
+                <div class="founder-image">
+                    <img src="headshot.jpg" alt="Sulaiman Sheriff-Akorede, Founder of Junestudios">
+                </div>
+                <div class="founder-bio">
+                    <h2>A Message from Our Founder</h2>
+                    <p><strong>Sulaiman Sheriff-Akorede</strong></p>
+                    <p>Our mission is to help you build on your dreams. We cut through the "digital facade" to deliver real, tangible results. I come from a place where the digital world is often dismissed as 'fake'—Junestudios is my answer. We're here to change that narrative and prove the power of technology to bring real ideas to life.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-24 bg-blue-700">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-extrabold text-white mb-6">Ready to Build Your Legacy?</h2>
-                <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Let's hop on a free 30-minute discovery call to map out your entire business growth strategy. No strings attached.</p>
-                <a href="https://calendly.com/junestudios/30min" target="_blank" class="bg-white text-blue-700 font-extrabold py-4 px-10 text-lg rounded-lg hover:bg-gray-100 transition duration-300">
-                    Book Your Free Call
-                </a>
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Real Results for Real Businesses</h2>
+                    <p>Don't just take our word for it.</p>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"Working with Junestudios cut through all the digital noise... Our clients feel more in control, and our team has saved 20+ hours a week on support calls."</p>
+                        <h4>— Mr. Samson, CEO of Maxlog</h4>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p>"The service booking system Junestudios built for us is a game-changer... Our system automatically handles bookings, sends service reminders, and follows up for reviews."</p>
+                        <h4>— Mr. Tobiloba, CEO of 4 tyre Autos</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="container">
+                <h2>Ready to Build Your Digital Engine?</h2>
+                <p>Let's find the 'facade' in your workflow and replace it with a high-performance asset.</p>
+                <a href="https://calendly.com/junestudio/15-min-content-audit-" class="btn btn-primary btn-large" target="_blank">Book Your Free Automation Audit</a>
             </div>
         </section>
     </main>
 
-    <footer class="py-10 bg-gray-900">
-        <div class="container mx-auto px-6 text-center text-gray-400">
+    <footer class="footer">
+        <div class="container">
             <p>&copy; 2025 Junestudios. All rights reserved.</p>
         </div>
     </footer>
